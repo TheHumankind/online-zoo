@@ -1,0 +1,109 @@
+.pets .container__btn > img {
+  margin-right: 19px; }
+
+.pets .container__btn:hover > img {
+  animation: linear 1.5s infinite heart-rotate; }
+
+.pets .container__btn > img {
+  width: 24px;
+  height: 24px;
+  transition: 1.5s; }
+
+.pets__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 65px;
+  padding: 0;
+  list-style: none; }
+
+.pets__card {
+  margin-bottom: 20px; }
+
+.pets__card, .pets__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 480px;
+  height: 364px;
+  background: #ffffff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s; }
+  .pets__card:hover, .pets__link:hover {
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15); }
+  .pets__card-footer, .pets__link-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 30px 21px;
+    width: 100%;
+    height: 91px;
+    border-top: 1px solid #e5eaeb; }
+
+.pets__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 228px;
+  height: 228px;
+  clip-path: path("M208.771 45.8713C228.621 72.65 234.135 109.15 223.842 137.212C213.549 165.275 187.817 185.084 158.225 200.49C128.817 215.897 95.5484 227.086 67.2429 217.365C38.9373 207.827 15.4106 177.747 5.3015 142.164C-4.62382 106.582 -1.13158 65.4968 20.1895 38.5347C41.6944 11.3893 80.8442 -1.81665 117.788 0.200917C154.549 2.21848 188.92 19.2761 208.771 45.8713Z");
+  border: none;
+  overflow: hidden;
+  transition: .7s; }
+  .pets__img:hover {
+    animation: linear 10s infinite border-rotation; }
+  .pets__img > img {
+    position: absolute;
+    top: -5%;
+    left: -30%;
+    width: 364px;
+    height: 253px;
+    transition: .7s;
+    overflow: hidden; }
+    .pets__img > img:hover {
+      animation: linear 10s infinite anti-border-rotation; }
+
+.pets__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2d2d2d; }
+
+.pets__location {
+  margin-top: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191; }
+
+.pets__slider-btn {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-58%); }
+
+.pets__slider-prev > img {
+  transition: 0.3s;
+  transform: scale(-1);
+  cursor: pointer; }
+  .pets__slider-prev > img:hover {
+    transform: scale(-1.2); }
+  .pets__slider-prev > img:active {
+    transform: scale(-0.8); }
+
+.pets__slider-next > img {
+  transition: 0.3s;
+  cursor: pointer; }
+  .pets__slider-next > img:hover {
+    transform: scale(1.2); }
+  .pets__slider-next > img:active {
+    transform: scale(0.8); }

@@ -1,0 +1,156 @@
+.look{
+
+    margin-top: 100px;
+
+    .container{
+
+        &__header{
+
+            margin-top: 0px;
+
+        }
+
+    }
+
+    &__slider{
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__btn{
+
+        width: 52px;
+
+    }
+
+    &__list{
+
+        display: flex;
+        justify-content: space-between;
+        width: 1310px;
+        padding: 0;
+        list-style: none;
+
+    }
+
+    &__item{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 81px;
+        height: 131px;
+        font-family: Roboto Mono;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #2D2D2D;
+
+        &-link{
+
+            display: block;
+            position: relative;
+            width: 80px;
+            height: 76px;
+            margin-bottom: 9px;
+            clip-path: path("M 73.0698 16.055 C 80.0173 25.4275 81.9472 38.2025 78.3447 48.0242 C 74.7421 57.8462 65.736 64.7794 55.3787 70.1715 C 45.0859 75.5639 33.4419 79.4801 23.535 76.0777 C 13.6281 72.7394 5.3937 62.2114 1.8555 49.7574 C -1.6183 37.3037 -0.3961 22.9239 7.0663 13.4871 C 14.593 3.9863 28.2955 -0.6358 41.2258 0.0703 C 54.0921 0.7765 66.122 6.7466 73.0698 16.055 Z");
+            
+            &:hover{
+
+                animation: linear 10s infinite border-rotation;
+    
+            }
+
+            & > img{
+
+                position: absolute;
+                width: 130%;
+                height: 110%;
+                top: -3px;
+                left: -16px;
+
+                &:hover{
+
+                    animation: linear 10s infinite anti-border-rotation;
+
+                }
+                        
+            }
+
+        }
+
+    }
+
+    &__slider{
+
+        position: relative;
+        margin-top: 50px;
+
+        &-btn{
+
+            position: absolute;
+            top: 8%;
+            right: 3.3%;
+
+        }
+
+            &-prev{
+
+                & > img{
+                    
+                    transition: 0.3s;
+                    transform: scale(-1);
+                    cursor: pointer;
+
+                &:hover{
+
+                    transform: scale(-1.2);
+
+                }
+
+                &:active{
+
+                    transform: scale(-0.8);
+
+                }
+
+            }
+
+        }
+
+        &-next{
+
+            & > img{
+                
+                transition: 0.3s;
+                transform: scale(1);
+                cursor: pointer;
+
+            &:hover{
+
+                transform: scale(1.2);
+
+            }
+
+            &:active{
+
+                transform: scale(0.8);
+
+            }
+
+        }
+
+    }
+            
+    }
+    
+
+
+}

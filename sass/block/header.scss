@@ -1,0 +1,135 @@
+.menu{
+
+    width: 100%;
+    padding: 13px 0px;
+    background-color: #2a8086;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.10);
+    z-index: 2;
+
+    .wrapper{
+
+        display: flex;
+        width: 50%;
+
+    }
+
+    .container{
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__logo{
+
+        width: 108px;
+        height: 84px;
+
+    }
+
+    &__list{
+
+        display: flex;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+        list-style: none;
+
+        
+
+        &-item{
+
+            margin-left: 52px;
+            transition: 0.3s;
+
+            &:nth-child(2){
+
+                border-bottom: 2px solid #c5e1e6;
+
+                &:hover{
+
+                    border-bottom: 0px solid #c5e1e6;
+
+                }
+    
+            }
+
+            &:hover{ 
+
+                transform: scale(1.15);
+
+            }
+
+        }
+
+        &-link{
+
+            font-family: Roboto Mono;
+            color: #c5e1e6;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.3s;
+
+            
+
+        }
+
+    }
+
+    &__account{
+
+        display: flex;
+
+        &-manage{
+
+            display: flex;
+            align-items: center;
+
+            & > *{
+
+                font-family: Roboto;
+                font-size: 18px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #c5e1e6;
+                outline: none;
+                cursor: pointer;
+
+            }
+        }
+
+    }
+
+    .button {
+
+        background: none;
+
+    }
+
+    &__search{
+
+        margin-right: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+    }
+
+    &__log-in{
+
+        border: none;
+        margin-right: 20px;
+
+    }
+
+    &__sign-up{
+
+        width: 97px;
+        height: 52px;
+        border: 1px solid #c5e1e6;
+        border-radius: 100px;
+
+    }
+}
