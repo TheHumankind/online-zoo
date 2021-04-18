@@ -1,0 +1,41 @@
+@media (max-width: 1440px) {
+  .map {
+    height: 840px; } }
+
+@media (max-width: 1200px) {
+  .map .container {
+    width: 95%; }
+  .map__btn {
+    right: 9%;
+    bottom: 2.5%; } }
+
+@media (max-width: 975px) {
+  .map {
+    height: 700px; }
+    .map__pets {
+      transform: scale(0.8); }
+    .map__eagle {
+      left: 10%; }
+    .map__crocodile {
+      left: 20%; }
+    .map__btn {
+      right: 9%;
+      bottom: 2.5%; } }
+
+@media (max-width: 576px) {
+  .map {
+    height: 490px; }
+    .map .container {
+      width: 709px;
+      height: 373px; }
+      .map .container .subheader {
+        display: none; }
+    .map__pets {
+      transform: scale(0.6); }
+    .map__eagle {
+      left: 10%; }
+    .map__crocodile {
+      left: 20%; }
+    .map__btn {
+      right: 53%;
+      bottom: -18.5%; } }

@@ -1,26 +1,53 @@
+@charset "UTF-8";
 .menu {
+  max-width: 100%;
   width: 100%;
   padding: 13px 0px;
   background-color: #2a8086;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   z-index: 2; }
-  .menu .wrapper {
-    display: flex;
-    width: 50%; }
   .menu .container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
+  .menu__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    z-index: 2;
+    cursor: pointer; }
+    .menu__hamburger > span {
+      width: 26px;
+      height: 2px;
+      margin-bottom: 6px;
+      background: #C5E1E6;
+      border-radius: 4px; }
   .menu__logo {
-    width: 108px;
-    height: 84px; }
-  .menu__list {
     display: flex;
     align-items: center;
+    width: 18.7%;
+    max-width: 108px;
+    height: 84px; }
+    .menu__logo > a {
+      width: 100%; }
+      .menu__logo > a > img {
+        width: 100%; }
+  .menu__nav {
+    width: 54%; }
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: ы;
     padding: 0;
     height: 100%;
     list-style: none; }
     .menu__list-item {
-      margin-left: 52px;
+      display: block;
+      margin-left: 2.8vw;
       transition: 0.3s; }
       .menu__list-item:nth-child(2) {
         border-bottom: 2px solid #c5e1e6; }
@@ -31,14 +58,17 @@
     .menu__list-link {
       font-family: Roboto Mono;
       color: #c5e1e6;
-      font-size: 18px;
+      font-size: 0.95vw;
       font-weight: 500;
       text-transform: uppercase;
       text-decoration: none;
       transition: 0.3s; }
   .menu__account {
-    display: flex; }
+    display: flex;
+    max-width: 280px;
+    width: 100%; }
     .menu__account-manage {
+      width: 100%;
       display: flex;
       align-items: center; }
       .menu__account-manage > * {
@@ -50,17 +80,21 @@
         outline: none;
         cursor: pointer; }
   .menu .button {
-    background: none; }
+    background: none;
+    width: 100%; }
   .menu__search {
-    margin-right: 30px;
+    max-width: 35px;
+    width: 100%;
+    margin-right: 20px;
     border: none;
     outline: none;
     cursor: pointer; }
   .menu__log-in {
     border: none;
-    margin-right: 20px; }
+    width: 100%; }
   .menu__sign-up {
-    width: 97px;
+    max-width: 97px;
+    width: 100%;
     height: 52px;
     border: 1px solid #c5e1e6;
     border-radius: 100px; }

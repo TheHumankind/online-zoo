@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="pages/css/style.css">
-    <link rel="stylesheet" href="pages/css/block/animation.css">
-    <link rel="stylesheet" href="pages/css/block/feed.css">
-    <link rel="stylesheet" href="pages/css/block/header.css">
-    <link rel="stylesheet" href="pages/css/block/hero.css">
-    <link rel="stylesheet" href="pages/css/block/footer.css">
-    <link rel="stylesheet" href="pages/css/block/how.css">
-    <link rel="stylesheet" href="pages/css/block/pets.css">
-    <link rel="stylesheet" href="pages/css/block/testimonials.css">
-    <link rel="stylesheet" href="pages/css/block/look.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pages/css/style.css">
+  <link rel="stylesheet" href="pages/css/block/animation.css">
+  <link rel="stylesheet" href="pages/css/block/feed.css">
+  <link rel="stylesheet" href="pages/css/block/header.css">
+  <link rel="stylesheet" href="pages/css/block/hero.css">
+  <link rel="stylesheet" href="pages/css/block/footer.css">
+  <link rel="stylesheet" href="pages/css/block/how.css">
+  <link rel="stylesheet" href="pages/css/block/pets.css">
+  <link rel="stylesheet" href="pages/css/block/testimonials.css">
+  <link rel="stylesheet" href="pages/css/block/look.css">
+  <link rel="stylesheet" href="pages/css/block/media-footer.css">
+  <link rel="stylesheet" href="pages/css/block/media-header.css">
+  <link rel="stylesheet" href="pages/css/block/media-landing.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
 </head>
   <body>
     <header class="menu">
@@ -26,37 +29,42 @@
         <nav class="menu__nav">
           <ul class="menu__list">
             <li class="menu__logo">
-              <a href="#">
+              <a href="">
                 <img src="assets/icons/header/logo.svg" alt="">
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a href="#" class="menu__list-link" href="">
                 about
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="pages/html/map.html">
+              <a href="pages/html/map.html" class="menu__list-link" href="">
                 map
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="pages/html/panda.html">
+              <a href="pages/html/panda.html" class="menu__list-link" href="">
                 zoos
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="">
                 contact us
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">
+              <a href ="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="menu__list-link" href="">
                 design
               </a>
             </li>
           </ul>
         </nav>
+        <div class="menu__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="menu__account">
           <button class="button menu__search">
             <img src="assets/icons/header/search.svg" alt="">
@@ -71,9 +79,8 @@
           </div>
         </div>
       </div>
-    </header>
+    </header>      
     <section class="hero">
-      <img class="hero__bg" src="assets/img/hero/hero-bg.png" alt="">
       <div class="container">
         <div class="hero__offer">
           <h1 class="hero__header">
@@ -82,13 +89,18 @@
           <p class="hero__descr">
             Observe different animals from around the world online  in live time. Help vulunteers to take a good care of animals, donate to your favorite ones.
           </p>
-          <button class="hero__btn">
-            Watch now 
-          </button>
+          <div class="hero__btn-menu">
+            <button class="hero__btn-watch">
+              Watch now 
+            </button>
+            <button class="hero__btn-donate">
+              donate
+            </button>
+          </div>
         </div>
         <div class="hero__container-img">
-          <img src="assets/img/hero/hero-panda.png" alt="">     
-          <a href="pages/html/panda.html" class="hero__container-btn">
+          <img src="assets/img/hero/hero-panda.png" alt="">
+          <a href="" class="hero__container-btn">
             <img src="assets/icons/hero/play-btn.svg" alt="">
           </a>
         </div>
@@ -127,7 +139,8 @@
         </ul>
       </div>
       <div class="how__img">
-        <img class="how__bg" src="assets/img/how/how-works-image.png" alt="" class="how__bg">
+        <div alt="" class="how__bg">
+        </div>
         <img class="how__tree how__tree-01" src="assets/img/how/tree.svg" alt="">
         <img class="how__tree how__tree-02" src="assets/img/how/tree.svg" alt="">
         <img class="how__tree how__tree-03" src="assets/img/how/tree.svg" alt="">
@@ -143,7 +156,7 @@
           <h2 class="subheader">
             pets in zoo
           </h2>
-          <a class="container__btn" href="pages/html/map.html">
+          <a class="container__btn" href="">
             <img src="assets/icons/pets/like.svg" alt="">
             Choose your Favorite
           </a>
@@ -151,7 +164,7 @@
 
         <ul class="pets__list">
           <li class="pets__card">
-            <a href="pages/html/panda.html" class="pets__link">
+            <a href="" class="pets__link">
               <div class="pets__img">
                 <img src="assets/img/pets/panda.jpg" alt="">
               </div>
@@ -172,17 +185,17 @@
           </li>
 
           <li class="pets__card">
-            <a href="pages/html/eagle.html" class="pets__link">
+            <a href="" class="pets__link">
               <div class="pets__img">
                 <img src="assets/img/pets/eagle.jpg" alt="">
               </div>
               <div class="pets__card-footer">
                 <div class="pets__descr">
                   <h3 class="pets__name">
-                    Eagles
+                    Pandas
                   </h3>
                   <div class="pets__location">
-                    Catalina Island
+                    Shenshuping Gengda Panda Center
                   </div>
                 </div>
                 <div class="pets__watch">
@@ -193,17 +206,17 @@
           </li>
 
           <li class="pets__card">
-            <a href="pages/html/gorila.html" class="pets__link">
+            <a href="" class="pets__link">
               <div class="pets__img">
                 <img src="assets/img/pets/gorilas.jpg" alt="">
               </div>
               <div class="pets__card-footer">
                 <div class="pets__descr">
                   <h3 class="pets__name">
-                    Gorillas
+                    Pandas
                   </h3>
                   <div class="pets__location">
-                    GRACE gorillas
+                    Shenshuping Gengda Panda Center
                   </div>
                 </div>
                 <div class="pets__watch">
@@ -214,17 +227,17 @@
           </li>
 
           <li class="pets__card">
-            <a href="pages/html/aligator.html" class="pets__link">
+            <a href="" class="pets__link">
               <div class="pets__img">
                 <img src="assets/img/pets/crocodile.jpg" alt="">
               </div>
               <div class="pets__card-footer">
                 <div class="pets__descr">
                   <h3 class="pets__name">
-                    Aligators
+                    Pandas
                   </h3>
                   <div class="pets__location">
-                    St. Augustine's Alligator Farm Zoological Park
+                    Shenshuping Gengda Panda Center
                   </div>
                 </div>
                 <div class="pets__watch">
@@ -242,10 +255,10 @@
               <div class="pets__card-footer">
                 <div class="pets__descr">
                   <h3 class="pets__name">
-                    Elephants
+                    Pandas
                   </h3>
                   <div class="pets__location">
-                    Elephants
+                    Shenshuping Gengda Panda Center
                   </div>
                 </div>
                 <div class="pets__watch">
@@ -263,10 +276,10 @@
               <div class="pets__card-footer">
                 <div class="pets__descr">
                   <h3 class="pets__name">
-                    Lemurs
+                    Pandas
                   </h3>
                   <div class="pets__location">
-                    Madagascar
+                    Shenshuping Gengda Panda Center
                   </div>
                 </div>
                 <div class="pets__watch">
@@ -285,10 +298,13 @@
             </div>
           </li>
         </ul> 
+        <a class="btn-320px" href="">
+          <img src="assets/icons/pets/like.svg" alt="">
+          Choose your Favorite
+        </a>
       </div>
     </section>
     <section class="feed">
-      <img src="assets/img/feed/feed-bg.png" class="feed__bg" alt="">
       <div class="container">
         <div class="container__header">
           <h2 class="subheader">
@@ -305,15 +321,15 @@
             </div>
           </div>
           <div class="feed__arrow">
-            <img src="assets/icons/feed/arrow.svg" alt="">
+            
           </div>
           <div class="feed__step">
             <div class="feed__step-img">
-              <img src="assets/icons/feed/trust.svg" alt="">
+              <img src="assets/icons/feed/hand.svg" alt="">
             </div>
           </div>
           <div class="feed__arrow">
-            <img src="assets/icons/feed/arrow.svg" alt="">
+            
           </div>
           <div class="feed__step">
             <div class="feed__step-img">
@@ -332,6 +348,9 @@
             Animals are healthy and happy
           </p>
         </div>
+        <a class="btn-320px" href="">
+          donate to volunteers
+        </a>
       </div>
     </section>
     <section class="testimonials">
@@ -401,6 +420,10 @@
             </div>
           </div>
         </div>
+        <a class="btn-320px" href="">
+          <img src="assets/icons/testimonials/feedback.svg" alt="">
+          Leave feedback
+        </a>
       </div>
       
     </section>
@@ -414,7 +437,7 @@
         <div class="look__slider">
           <ul class="look__list">
             <li class="look__item">
-              <a href="pages/html/panda.html" class="look__item-link">
+              <a class="look__item-link">
                 <img src="assets/img/pets/panda.jpg" alt="">
               </a>
               <div class="look__name">
@@ -422,7 +445,7 @@
               </div>
             </li>
             <li class="look__item">
-              <a href="pages/html/gorila.html" class="look__item-link">
+              <a class="look__item-link">
                 <img src="assets/img/pets/gorilas.jpg" alt="">
               </a>
               <div class="look__name">
@@ -430,7 +453,7 @@
               </div>
             </li>
             <li class="look__item">
-              <a href="pages/html/eagle.html" class="look__item-link">
+              <a class="look__item-link">
                 <img src="assets/img/pets/eagle.jpg" alt="">
               </a>
               <div class="look__name">
@@ -438,7 +461,7 @@
               </div>
             </li>
             <li class="look__item">
-              <a href="pages/html/aligator.html" class="look__item-link">
+              <a class="look__item-link">
                 <img src="assets/img/pets/crocodile.jpg" alt="">
               </a>
               <div class="look__name">
@@ -446,7 +469,7 @@
               </div>
             </li>
             <li class="look__item">
-              <a href="#" class="look__item-link">
+              <a class="look__item-link">
                 <img src="assets/img/pets/elephant.jpg" alt="">
               </a>
               <div class="look__name">
@@ -454,7 +477,7 @@
               </div>
             </li>
             <li class="look__item">
-              <a href="#" class="look__item-link">
+              <a class="look__item-link">
                 <img src="assets/img/pets/lemur.jpg" alt="">
               </a>
               <div class="look__name">
@@ -462,7 +485,7 @@
               </div>
             </li>
             <li class="look__item">
-              <a href="pages/html/panda.html" class="look__item-link">
+              <a class="look__item-link">
                 <img src="assets/img/pets/panda.jpg" alt="">
               </a>
               <div class="look__name">
@@ -479,6 +502,9 @@
             </div>
           </div>
         </div>
+        <div class="look__down">
+          <img src="assets/icons/pets/arrow.svg" alt="">
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -491,17 +517,17 @@
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="#" class="footer__list-link" href="">
+              <a class="footer__list-link" href="">
                 about
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="pages/html/map.html" class="footer__list-link" href="">
+              <a class="footer__list-link" href="">
                 map
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="pages/html/panda.html" class="footer__list-link" href="">
+              <a class="footer__list-link" href="">
                 zoos
               </a>
             </li>
@@ -511,7 +537,7 @@
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="footer__list-link" href="">
+              <a class="footer__list-link" href="">
                 design
               </a>
             </li>
