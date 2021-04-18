@@ -12,252 +12,265 @@
     <link rel="stylesheet" href="../css/block/header.css">
     <link rel="stylesheet" href="../css/block/footer.css">
     <link rel="stylesheet" href="../css/block/animals.css">
+    <link rel="stylesheet" href="../css/block/media-animals.css">
+    <link rel="stylesheet" href="../css/block/media-footer-map.css">
+    <link rel="stylesheet" href="../css/block/media-header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gorillas</title>
 </head>
 <body>
-    <header class="menu">
-      <div class="container">
-        <nav class="menu__nav">
-          <ul class="menu__list">
-            <li class="menu__logo">
-              <a href="../../index.html">
-                <img src="../../assets/icons/header/logo.svg" alt="">
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="../../index.html">
-                about
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="map.html">
-                map
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="panda.html">
-                zoos
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                contact us
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">
-                design
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="menu__account">
-          <button class="button menu__search">
-            <img src="../../assets/icons/header/search.svg" alt="">
+  <header class="menu">
+    <div class="container">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__logo">
+            <a href="../../index.html">
+              <img src="../../assets/icons/header/logo.svg" alt="">
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="../../index.html" class="menu__list-link" href="">
+              about
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="map.html" class="menu__list-link" href="">
+              map
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link" href="">
+              zoos
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="">
+              contact us
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href ="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="menu__list-link" href="">
+              design
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu__account">
+        <button class="button menu__search">
+          <img src="assets/icons/header/search.svg" alt="">
+        </button>
+        <div class="menu__account-manage">
+          <button class="menu__log-in button">
+            log in
           </button>
-          <div class="menu__account-manage">
-            <button class="menu__log-in button">
-              log in
-            </button>
-            <button class="menu__sign-up button">
-              sign up
-            </button>
-          </div>
+          <button class="menu__sign-up button">
+            sign up
+          </button>
         </div>
       </div>
-    </header>
-    <div class="container">
-      <section class="animal">
-        <aside class="animal__menu">
-          <ul class="animal__list">
-            <li title="Pandas, Shenshuping Gengda Panda Center" class="animal__item">
-              <a href="panda.html" class="animal__item-link">
-                <img src="../../assets/img/pets/panda.jpg" alt="">
-              </a>
-              <div class="animal__name">
-                Pandas
-              </div>
-            </li>
-            <li title="Eagles, Catalina Island" class="animal__item">
-              <a href="eagle.html" class="animal__item-link">
-                <img src="../../assets/img/pets/eagle.jpg" alt="">
-              </a>
-              <div class="animal__name">
-                Eagles
-              </div>
-            </li>
-            <li title="Gorila, GRACE gorillas" class="animal__item">
-              <div class="animal__item-active">
-
-              </div>
-              <a href="gorila.html"  class="animal__item-link">
-                <img src="../../assets/img/pets/gorilas.jpg" alt="">
-              </a>
-              <div class="animal__name">
-                Gorillas
-              </div>
-            </li>
-            <li title="Aligators, St. Augustine's Zoological Park" class="animal__item">
-              <a href="aligator.html" class="animal__item-link">
-                <img src="../../assets/img/pets/crocodile.jpg" alt="">
-              </a>
-              <div class="animal__name">
-                Aligators
-              </div>
-            </li>
-          
-          </ul>
-        </aside>
-        <div class="animal__cam">
-          <div class="container__header">
-            <h2 class="subheader">
-              Gorilas
-            </h2>
-            <div class="container__btn">
-              <div>
-                <img src="../../assets/icons/animals/inf.svg" alt="">
-              </div>
-              <div>
-                <img src="../../assets/icons/pets/like.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="animal__watch">
-            <h3 class="animal__watch-sub">
-              Main cameras
-            </h3>
-            <iframe class="animal__youtube" src="https://www.youtube.com/embed/rgXWDk7rh4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <h3 class="animal__slider-sub animal__watch-sub">Side Cameras</h3>
-          <div class="animal__cam-slider">
-            <div class="animal__cam-card">
-              <img src="../../assets/img/animals/youtube.png" alt="">
-            </div>
-            <div class="animal__cam-card">
-              <img src="../../assets/img/animals/youtube.png" alt="">
-            </div>
-            <div class="animal__cam-card">
-              <img src="../../assets/img/animals/youtube.png" alt="">
-            </div>
-            <div class="animal__cam-btn">
-              <div class="animal__cam-next">
-                <img src="../../assets/icons/pets/arrow.svg" alt="">
-              </div>
-              <div class="animal__cam-prev">
-                <img src="../../assets/icons/pets/arrow.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="animal__descr">
-            <h2 class="animal__inf">
-              <div class="subheader">
-                information
-              </div>
-              <div class="animal__inf-item">
-                <h3 class="animal__inf-header">
-                  Zoo
-                </h3>
-                <div class="animal__inf-text">
-                  <a href="https://gracegorillas.org/">GRACE gorillas</a>
+    </div>
+  </header>
+    <div class="wrapper">
+      <div class="container">
+        <section class="animal">
+          <aside class="animal__menu">
+            <ul class="animal__list">
+              <li title="" class="animal__item">
+                 
+                <a href="panda.html" class="animal__item-link">
+                  <img src="../../assets/img/pets/panda.jpg" alt="">
+                </a>
+                <div class="animal__name">
+                  Pandas
                 </div>
-              </div>
-              <div class="animal__inf-item">
-                <h3 class="animal__inf-header">
-                  Type of aviary
-                </h3>
-                <div class="animal__inf-text">
-                  Imitation of the natural environment
+              </li>
+              <li class="animal__item">
+                <a  href="eagle.html" class="animal__item-link">
+                  <img src="../../assets/img/pets/eagle.jpg" alt="">
+                </a>
+                <div class="animal__name">
+                  Eagles
                 </div>
-              </div>
-              <div class="animal__inf-item">
-                <h3 class="animal__inf-header">
-                  Habitat
-                </h3>
-                <div class="animal__inf-text">
-                  <a href="https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo">Mountains of southwest China</a>
+              </li>
+              <li class="animal__item">
+                <div class="animal__item-active">
+                </div> 
+                <a  href="gorila.html" class="animal__item-link">
+                  <img src="../../assets/img/pets/gorilas.jpg" alt="">
+                </a>
+                <div class="animal__name">
+                  Gorilas
                 </div>
-              </div>
-              <div class="animal__inf-item">
-                <h3 class="animal__inf-header">
-                  Type of food
-                </h3>
-                <div class="animal__inf-text">
-                  Bamboo
+                
+              </li>
+              <li class="animal__item">
+                <a  href="aligator.html" class="animal__item-link">
+                  <img src="../../assets/img/pets/crocodile.jpg" alt="">
+                </a>
+                <div class="animal__name">
+                  Aligators
                 </div>
-              </div>
-              <div class="animal__inf-item">
-                <h3 class="animal__inf-header">
-                  Population in the world
-                </h3>
-                <div class="animal__inf-text">
-                  600
-                </div>
-              </div>
-              <div class="animal__inf-item">
-                <h3 class="animal__inf-header">
-                  About species
-                </h3>
-                <div class="animal__inf-text">
-                  The eastern gorilla has become increasingly endangered since the 1990s, and the species was listed as critically endangered in September 2016 as its population continued to decrease.      
-                </div>
-              </div>
-            </h2>
-            <div class="animal__fact">
+              </li>
+              <li class="animal__item-btn">
+                <img src="../../assets/icons/animals/arrow.svg" alt="">
+              </li>
+            </ul>
+          </aside>
+          <div class="animal__cam">
+            <div class="container__header">
               <h2 class="subheader">
-                interesting facts
+                The Giant Pandas
               </h2>
-              <ul class="animal__fact-list">
-                <li class="animal__fact-item">
-                  The eastern gorilla is a critically endangered species of the genus Gorilla and the largest living primate.
-                <li class="animal__fact-item">
-                  Gorillas tend to have larger group sizes than their western relatives, numbering up to 35 individuals.
-                </li>
-                <li class="animal__fact-item">
-                  The gorillas can choose where to sleep and they often choose to bed down inside their night building, but they sometimes sleep outside too.
-                </li>
-                <li class="animal__fact-item">
-                  Female pandas give birth to one or two cubs every two years. Cubs stay with their mothers for 18 months before venturing off on their own.
-                </li>
-                <li class="animal__fact-item">
-                  Because they eat so much fibrous vegetation, gorillas spend a lot of time resting and digesting.
-                </li>
-                <li class="animal__fact-item">
-                  Primary threats to the eastern gorilla include habitat destruction for residential, commercial, and agricultural purposes, habitat fragmentation caused by transportation corridors and resource extraction, as well as disease.                </li>
-                </li>
-              </ul>
+              <div class="container__btn">
+                <div>
+                  <img src="../../assets/icons/animals/inf.svg" alt="">
+                </div>
+                <div>
+                  <img src="../../assets/icons/pets/like.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="animal__watch">
+              <h3 class="animal__watch-sub">
+                Main cameras
+              </h3>
+              <iframe class="animal__youtube" src="https://www.youtube.com/embed/rgXWDk7rh4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3 class="animal__slider-sub animal__watch-sub">Side Cameras</h3>
+            <div class="animal__cam-slider">
+              <div class="animal__cam-card">
+                <img src="../../assets/img/animals/youtube.png" alt="">
+              </div>
+              <div class="animal__cam-card">
+                <img src="../../assets/img/animals/youtube.png" alt="">
+              </div>
+              <div class="animal__cam-card">
+                <img src="../../assets/img/animals/youtube.png" alt="">
+              </div>
+              <div class="animal__cam-btn">
+                <div class="animal__cam-next">
+                  <img src="../../assets/icons/pets/arrow.svg" alt="">
+                </div>
+                <div class="animal__cam-prev">
+                  <img src="../../assets/icons/pets/arrow.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="animal__descr">
+              <h2 class="animal__inf">
+                <div class="subheader">
+                  information
+                </div>
+                <div class="animal__inf-item">
+                  <h3 class="animal__inf-header">
+                    Zoo
+                  </h3>
+                  <div class="animal__inf-text">
+                    <a href="">Shenshuping Gengda Panda Center</a>
+                  </div>
+                </div>
+                <div class="animal__inf-item">
+                  <h3 class="animal__inf-header">
+                    Type of aviary
+                  </h3>
+                  <div class="animal__inf-text">
+                    Imitation of the natural environment
+                  </div>
+                </div>
+                <div class="animal__inf-item">
+                  <h3 class="animal__inf-header">
+                    Habitat
+                  </h3>
+                  <div class="animal__inf-text">
+                    <a href="">Mountains of southwest China</a>
+                  </div>
+                </div>
+                <div class="animal__inf-item">
+                  <h3 class="animal__inf-header">
+                    Type of food
+                  </h3>
+                  <div class="animal__inf-text">
+                    Bamboo
+                  </div>
+                </div>
+                <div class="animal__inf-item">
+                  <h3 class="animal__inf-header">
+                    Population in the world
+                  </h3>
+                  <div class="animal__inf-text">
+                    600
+                  </div>
+                </div>
+                <div class="animal__inf-item">
+                  <h3 class="animal__inf-header">
+                    About species
+                  </h3>
+                  <div class="animal__inf-text">
+                    The yards at Shenshuping Gengda Panda Center in China's Wolong Valley are filled with bamboo--making for some very happy panda residents.
+                  </div>
+                </div>
+              </h2>
+              <div class="animal__fact">
+                <h2 class="subheader">
+                  interesting facts
+                </h2>
+                <ul class="animal__fact-list">
+                  <li class="animal__fact-item">
+                    The Giant Pandas are omnivores. But whilst pandas will occasionally eat small animals and fish, bamboo counts for 99 percent of their diet.
+                  </li>
+                  <li class="animal__fact-item">
+                    Pandas are BIG eaters – every day they fill their tummies for up to 12 hours, shifting up to 12 kilograms of bamboo.
+                  </li>
+                  <li class="animal__fact-item">
+                    The giant panda’s scientific name is Ailuropoda melanoleuca, which means “black and white cat-foot”.
+                  </li>
+                  <li class="animal__fact-item">
+                    Female pandas give birth to one or two cubs every two years. Cubs stay with their mothers for 18 months before venturing off on their own.
+                  </li>
+                  <li class="animal__fact-item">
+                    Baby pandas are born pink and measure about 15cm.
+                  </li>
+                  <li class="animal__fact-item">
+                    These beautiful bears are endangered, and it’s estimated that only around 1,000 remain in the wild. That’s why we need to do all we can to protect them!
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="animal__donate">
+              <button class="animal__donate-btn">
+                Donate to volunteers
+              </button>
             </div>
           </div>
-          <div class="animal__donate">
-            <img src="../../assets/img/animals/animal-donate.png" alt="">
-            <button class="animal__donate-btn">
-              Donate to volunteers
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
     <footer class="footer">
       <div class="container">
         <nav class="footer__nav">
           <ul class="footer__list">
             <li class="footer__logo">
-              <a href="../../index.html">
+              <a href="">
                 <img src="../../assets/icons/header/logo.svg" alt="">
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="../../index.html" class="footer__list-link" href="../../index.html">
+              <a class="footer__list-link" href="">
                 about
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="map.html" class="footer__list-link" href="">
+              <a class="footer__list-link" href="">
                 map
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="panda.html" class="footer__list-link" href="">
+              <a class="footer__list-link" href="">
                 zoos
               </a>
             </li>
@@ -267,7 +280,7 @@
               </a>
             </li>
             <li class="footer__list-item">
-              <a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="footer__list-link" href="">
+              <a class="footer__list-link" href="">
                 design
               </a>
             </li>
@@ -282,6 +295,6 @@
           </p>
         </div>
       </div>
-    </footer>    
+    </footer>     
 </body>
 </html>
