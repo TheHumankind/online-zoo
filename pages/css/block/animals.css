@@ -7,6 +7,13 @@
 .menu__list-item:nth-child(4) {
   border-bottom: 2px solid #c5e1e6; }
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  background: url(../../../assets/img/animals/animal-donate.png) no-repeat;
+  background-position: 0 110%;
+  background-size: contain; }
+
 .container__header {
   margin-top: 55px; }
 
@@ -22,6 +29,7 @@
   justify-content: space-between;
   border: none;
   max-width: 118px;
+  width: 100%;
   height: 42px;
   margin-right: 4px;
   padding: 0; }
@@ -30,6 +38,7 @@
     justify-content: center;
     align-items: center;
     max-width: 42px;
+    width: 100%;
     height: 42px;
     border: 1.5px solid #19707d;
     border-radius: 100%;
@@ -44,6 +53,8 @@
 .animal {
   display: flex;
   height: 100%; }
+  .animal__item-btn {
+    display: none; }
   .animal__menu {
     position: relative;
     margin-right: 51px; }
@@ -54,7 +65,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    max-width: 105px;
+    width: 105px;
     padding: 0;
     list-style: none; }
   .animal__item {
@@ -63,7 +74,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 81px;
+    width: 81px;
     height: 110px;
     margin-top: 50px;
     font-family: Roboto Mono;
@@ -84,22 +95,23 @@
     .animal__item-active {
       position: absolute;
       max-width: 100px;
+      width: 125%;
       height: 100px;
       top: -4px;
-      left: -11px;
+      left: -17px;
       clip-path: path("M 87.7735 19.2857 C 96.119 30.5442 98.4372 45.8899 94.1098 57.688 C 89.7823 69.4864 78.9639 77.8148 66.5224 84.2919 C 54.1584 90.7694 40.1713 95.4737 28.2709 91.3866 C 16.3704 87.3766 6.4791 74.73 2.2289 59.77 C -1.9439 44.8102 -0.4758 27.5368 8.4882 16.2011 C 17.5295 4.7885 33.9893 -0.7637 49.5216 0.0844 C 64.9769 0.9328 79.4276 8.1042 87.7735 19.2857 Z");
       background: #2A8086;
       z-index: 0; }
     .animal__item-link {
-      display: block;
+      display: flex;
       position: relative;
-      max-width: 80px;
+      width: 100px;
       height: 76px;
       margin-bottom: 9px;
       clip-path: path("M 73.0698 16.055 C 80.0173 25.4275 81.9472 38.2025 78.3447 48.0242 C 74.7421 57.8462 65.736 64.7794 55.3787 70.1715 C 45.0859 75.5639 33.4419 79.4801 23.535 76.0777 C 13.6281 72.7394 5.3937 62.2114 1.8555 49.7574 C -1.6183 37.3037 -0.3961 22.9239 7.0663 13.4871 C 14.593 3.9863 28.2955 -0.6358 41.2258 0.0703 C 54.0921 0.7765 66.122 6.7466 73.0698 16.055 Z"); }
       .animal__item-link > img {
         position: absolute;
-        max-width: 130%;
+        width: 130%;
         height: 110%;
         top: -3px;
         left: -16px; }
@@ -120,12 +132,14 @@
   .animal__slider-sub {
     margin-top: 53px; }
   .animal__cam {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%; }
     .animal__cam-slider {
       position: relative;
       display: flex;
-      justify-content: space-between;
-      max-width: 1204px; }
+      justify-content: center;
+      width: 91%;
+      column-gap: 2.7vw; }
     .animal__cam-prev > img {
       transition: 0.3s;
       transform: scale(-1);
@@ -143,28 +157,33 @@
         transform: scale(0.8); }
     .animal__cam-card {
       max-width: 380px;
-      height: 240px; }
+      width: 100%;
+      height: 220px; }
       .animal__cam-card > img {
-        max-width: 100%; }
+        max-width: 100%;
+        width: 100%; }
     .animal__cam-btn {
       position: absolute;
       top: 27%;
       right: -7%; }
   .animal__youtube {
     max-width: 1324px;
+    width: 100%;
     height: 604px;
     border-radius: 19px; }
   .animal__descr {
     display: flex;
-    margin-top: 100px; }
+    margin-top: 115px; }
     .animal__descr .subheader {
       height: 22px; }
   .animal__inf {
-    max-width: 50.8%; }
+    max-width: 50.8%;
+    width: 100%; }
     .animal__inf .subheader {
       margin-bottom: 30px; }
     .animal__inf-item {
       max-width: 80%;
+      width: 100%;
       margin-top: 34px; }
     .animal__inf-header {
       font-family: Roboto;
@@ -183,6 +202,7 @@
       color: #0D444D; }
   .animal__fact {
     max-width: 48.5%;
+    width: 100%;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -203,6 +223,7 @@
         top: -1px;
         left: -23px;
         max-width: 12px;
+        width: 100%;
         height: 15px;
         clip-path: path("M1.49247 0.50889C5.8121 2.84025 11.7231 9.85155 12.3095 15.2466C12.3692 15.7956 11.922 16.1371 11.4512 15.8483C8.55901 14.074 0.80434 6.69285 0.348157 1.22713C0.295422 0.595286 0.934516 0.207751 1.49247 0.50889Z");
         background: #0D444D; }
@@ -212,14 +233,9 @@
     justify-content: center;
     align-items: flex-end;
     height: 425px; }
-    .animal__donate > img {
-      position: absolute;
-      bottom: -100px;
-      left: -28%;
-      max-width: 1920px;
-      z-index: -1; }
     .animal__donate-btn {
       max-width: 356px;
+      width: 100%;
       height: 52px;
       margin-bottom: 54px;
       margin-right: 152px;
