@@ -5,7 +5,7 @@
   animation: linear 1.5s infinite heart-rotate; }
 
 .pets .container__btn > img {
-  width: 24px;
+  max-width: 24px;
   height: 24px;
   transition: 1.5s; }
 
@@ -19,14 +19,17 @@
   list-style: none; }
 
 .pets__card {
+  width: 32.4%;
   margin-bottom: 20px; }
+
+.pets__link {
+  width: 100%; }
 
 .pets__card, .pets__link {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 480px;
   height: 364px;
   background: #ffffff;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
@@ -40,6 +43,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 17px 30px 21px;
+    max-width: 100%;
     width: 100%;
     height: 91px;
     border-top: 1px solid #e5eaeb; }
@@ -49,7 +53,8 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  width: 228px;
+  max-width: 228px;
+  width: 100%;
   height: 228px;
   clip-path: path("M208.771 45.8713C228.621 72.65 234.135 109.15 223.842 137.212C213.549 165.275 187.817 185.084 158.225 200.49C128.817 215.897 95.5484 227.086 67.2429 217.365C38.9373 207.827 15.4106 177.747 5.3015 142.164C-4.62382 106.582 -1.13158 65.4968 20.1895 38.5347C41.6944 11.3893 80.8442 -1.81665 117.788 0.200917C154.549 2.21848 188.92 19.2761 208.771 45.8713Z");
   border: none;
@@ -61,7 +66,7 @@
     position: absolute;
     top: -5%;
     left: -30%;
-    width: 364px;
+    max-width: 364px;
     height: 253px;
     transition: .7s;
     overflow: hidden; }
@@ -87,8 +92,8 @@
 
 .pets__slider-btn {
   position: absolute;
-  top: 50%;
-  right: -100px;
+  right: -8%;
+  top: 49%;
   transform: translateY(-58%); }
 
 .pets__slider-prev > img {
