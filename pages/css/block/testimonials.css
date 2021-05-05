@@ -11,11 +11,26 @@
       animation: linear 1.5s infinite heart-rotate; }
   .testimonials__massages {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     max-width: 100%;
     z-index: -1; }
+  .testimonials #testContent {
+    display: flex;
+    column-gap: 20px;
+    width: 3300px;
+    height: 320px; }
+  .testimonials .wrapper {
+    width: 1480px;
+    position: relative; }
+  .testimonials #testCarousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; }
+  .testimonials #testCarousel::-webkit-scrollbar {
+    height: 0; }
   .testimonials__feedback {
-    max-width: 32.4%;
+    width: 478px;
     margin-top: 51px;
     height: 260px; }
   .testimonials__descr {

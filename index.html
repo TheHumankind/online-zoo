@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="pages/css/style.css">
   <link rel="stylesheet" href="pages/css/block/animation.css">
   <link rel="stylesheet" href="pages/css/block/feed.css">
+  <link rel="stylesheet" href="pages/css/block/popup.css">
   <link rel="stylesheet" href="pages/css/block/header.css">
   <link rel="stylesheet" href="pages/css/block/hero.css">
   <link rel="stylesheet" href="pages/css/block/footer.css">
@@ -29,32 +30,32 @@
         <nav class="menu__nav">
           <ul class="menu__list">
             <li class="menu__logo">
-              <a href="">
+              <a href="#">
                 <img src="assets/icons/header/logo.svg" alt="">
               </a>
             </li>
             <li class="menu__list-item">
-              <a href="#" class="menu__list-link" href="">
+              <a class="menu__list-link" href="#">
                 about
               </a>
             </li>
             <li class="menu__list-item">
-              <a href="pages/html/map.html" class="menu__list-link" href="">
+              <a class="menu__list-link" href="pages/html/map.html">
                 map
               </a>
             </li>
             <li class="menu__list-item">
-              <a href="pages/html/panda.html" class="menu__list-link" href="">
+              <a class="menu__list-link" href="pages/html/panda.html">
                 zoos
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="">
+              <a id="contactUs" class="menu__list-link" href="">
                 contact us
               </a>
             </li>
             <li class="menu__list-item">
-              <a href ="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="menu__list-link" href="">
+              <a class="menu__list-link" href="">
                 design
               </a>
             </li>
@@ -67,7 +68,7 @@
         </div>
         <div class="menu__account">
           <button class="button menu__search">
-            <img src="assets/icons/header/search.svg" alt="">
+            <img src="../../assets/icons/header/search.svg" alt="">
           </button>
           <div class="menu__account-manage">
             <button class="menu__log-in button">
@@ -161,143 +162,300 @@
             Choose your Favorite
           </a>
         </div>
-
-        <ul class="pets__list">
-          <li class="pets__card">
-            <a href="" class="pets__link">
-              <div class="pets__img">
-                <img src="assets/img/pets/panda.jpg" alt="">
-              </div>
-              <div class="pets__card-footer">
-                <div class="pets__descr">
-                  <h3 class="pets__name">
-                    Pandas
-                  </h3>
-                  <div class="pets__location">
-                    Shenshuping Gengda Panda Center
+        <div class="wrapper">
+          <div id="carouselPets" class="carousel">
+            <ul id="contentPets" class="pets__list">
+              <li class="pets__card">
+                <a href="pages/html/panda.html" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/panda.jpg" alt="">
                   </div>
-                </div>
-                <div class="pets__watch">
-                  <img src="assets/icons/pets/tv.svg" alt="">
-                </div>
-              </div>
-            </a> 
-          </li>
-
-          <li class="pets__card">
-            <a href="" class="pets__link">
-              <div class="pets__img">
-                <img src="assets/img/pets/eagle.jpg" alt="">
-              </div>
-              <div class="pets__card-footer">
-                <div class="pets__descr">
-                  <h3 class="pets__name">
-                    Pandas
-                  </h3>
-                  <div class="pets__location">
-                    Shenshuping Gengda Panda Center
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №1
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
                   </div>
-                </div>
-                <div class="pets__watch">
-                  <img src="assets/icons/pets/tv.svg" alt="">
-                </div>
-              </div>
-            </a> 
-          </li>
-
-          <li class="pets__card">
-            <a href="" class="pets__link">
-              <div class="pets__img">
-                <img src="assets/img/pets/gorilas.jpg" alt="">
-              </div>
-              <div class="pets__card-footer">
-                <div class="pets__descr">
-                  <h3 class="pets__name">
-                    Pandas
-                  </h3>
-                  <div class="pets__location">
-                    Shenshuping Gengda Panda Center
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="pages/html/panda.html" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/eagle.jpg" alt="">
                   </div>
-                </div>
-                <div class="pets__watch">
-                  <img src="assets/icons/pets/tv.svg" alt="">
-                </div>
-              </div>
-            </a> 
-          </li>
-
-          <li class="pets__card">
-            <a href="" class="pets__link">
-              <div class="pets__img">
-                <img src="assets/img/pets/crocodile.jpg" alt="">
-              </div>
-              <div class="pets__card-footer">
-                <div class="pets__descr">
-                  <h3 class="pets__name">
-                    Pandas
-                  </h3>
-                  <div class="pets__location">
-                    Shenshuping Gengda Panda Center
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №2
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
                   </div>
-                </div>
-                <div class="pets__watch">
-                  <img src="assets/icons/pets/tv.svg" alt="">
-                </div>
-              </div>
-            </a> 
-          </li>
-
-          <li class="pets__card">
-            <a href="" class="pets__link">
-              <div class="pets__img">
-                <img src="assets/img/pets/elephant.jpg" alt="">
-              </div>
-              <div class="pets__card-footer">
-                <div class="pets__descr">
-                  <h3 class="pets__name">
-                    Pandas
-                  </h3>
-                  <div class="pets__location">
-                    Shenshuping Gengda Panda Center
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="pages/html/panda.html" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/gorilas.jpg" alt="">
                   </div>
-                </div>
-                <div class="pets__watch">
-                  <img src="assets/icons/pets/tv.svg" alt="">
-                </div>
-              </div>
-            </a> 
-          </li>
-
-          <li class="pets__card">
-            <a href="" class="pets__link">
-              <div class="pets__img">
-                <img src="assets/img/pets/lemur.jpg" alt="">
-              </div>
-              <div class="pets__card-footer">
-                <div class="pets__descr">
-                  <h3 class="pets__name">
-                    Pandas
-                  </h3>
-                  <div class="pets__location">
-                    Shenshuping Gengda Panda Center
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №3
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
                   </div>
-                </div>
-                <div class="pets__watch">
-                  <img src="assets/icons/pets/tv.svg" alt="">
-                </div>
-              </div>
-            </a> 
-          </li>  
-
-          <li class="pets__slider-btn">
-            <div class="pets__slider-next">
-              <img src="assets/icons/pets/arrow.svg" alt="">
-            </div>
-            <div class="pets__slider-prev">
-              <img src="assets/icons/pets/arrow.svg" alt="">
-            </div>
-          </li>
-        </ul> 
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="pages/html/panda.html" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/crocodile.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №4
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/elephant.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №5
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/lemur.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №6
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/panda.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №7
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/eagle.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №8
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/gorilas.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №9
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/crocodile.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №10
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/elephant.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №11
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/lemur.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №12
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/lemur.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №13
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>   
+              <li class="pets__card">
+                <a href="" class="pets__link">
+                  <div class="pets__img">
+                    <img src="assets/img/pets/lemur.jpg" alt="">
+                  </div>
+                  <div class="pets__card-footer">
+                    <div class="pets__descr">
+                      <h3 class="pets__name">
+                        Pandas №14
+                      </h3>
+                      <div class="pets__location">
+                        Shenshuping Gengda Panda Center
+                      </div>
+                    </div>
+                    <div class="pets__watch">
+                      <img src="assets/icons/pets/tv.svg" alt="">
+                    </div>
+                  </div>
+                </a> 
+              </li>
+            </ul>
+          </div> 
+        </div>
+        <div class="pets__slider-btn">
+          <div id="petsNext" class="pets__slider-next">
+            <img src="assets/icons/pets/arrow.svg" alt="">
+          </div>
+          <div id="petsPrev" class="pets__slider-prev">
+            <img src="assets/icons/pets/arrow.svg" alt="">
+          </div>
+        </div>
         <a class="btn-320px" href="">
           <img src="assets/icons/pets/like.svg" alt="">
           Choose your Favorite
@@ -310,9 +468,9 @@
           <h2 class="subheader">
             pay and feed
           </h2>
-          <a class="container__btn" href="">
+          <div id="donate" class="container__btn">
             donate to volunteers
-          </a>
+          </div>
         </div>
         <div class="feed__info">
           <div class="feed__step">
@@ -359,63 +517,121 @@
           <h2 class="subheader">
             testimonials
           </h2>
-          <a class="container__btn" href="">
+          <div id="feedback" class="container__btn" href="">
             <img src="assets/icons/testimonials/feedback.svg" alt="">
             Leave feedback
-          </a>
+          </div>
         </div>
-        <div class="testimonials__massages">
-          <div class="testimonials__feedback">
-            <div class="testimonials__descr">
-              <h3 class="testimonials__date">
-                20 Decepmer 2020
-              </h3>
-              <div class="testimonials__text">
-                Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
+        <div class="wrapper">
+          <div id="testCarousel" class="testimonials__massages">
+            <div id="testContent">
+              <div class="testimonials__feedback">
+                <div class="testimonials__descr">
+                  <h3 class="testimonials__date">
+                    20 Decepmer 2020
+                  </h3>
+                  <div class="testimonials__text">
+                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
+                  </div>
+                </div>
+                <div class="testimonials__person">
+                  <div class="testimonials__person-photo">
+                    <img src="assets/img/testimonials/feedback-01.png" alt="">
+                  </div>
+                  <div class="testimonials__person-name">
+                    Adam, Spain
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="testimonials__person">
-              <div class="testimonials__person-photo">
-                <img src="assets/img/testimonials/feedback-01.png" alt="">
+              <div class="testimonials__feedback">
+                <div class="testimonials__descr">
+                  <h3 class="testimonials__date">
+                    20 Decepmer 2020
+                  </h3>
+                  <div class="testimonials__text">
+                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
+                  </div>
+                </div>
+                <div class="testimonials__person">
+                  <div class="testimonials__person-photo">
+                    <img src="assets/img/testimonials/feedback-02.png" alt="">
+                  </div>
+                  <div class="testimonials__person-name">
+                    Chris, Australia
+                  </div>
+                </div>
               </div>
-              <div class="testimonials__person-name">
-                Adam, Spain
+              <div class="testimonials__feedback">
+                <div class="testimonials__descr">
+                  <h3 class="testimonials__date">
+                    20 Decepmer 2020
+                  </h3>
+                  <div class="testimonials__text">
+                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
+                  </div>
+                </div>
+                <div class="testimonials__person">
+                  <div class="testimonials__person-photo">
+                    <img src="assets/img/testimonials/feedback-03.png" alt="">
+                  </div>
+                  <div class="testimonials__person-name">
+                    Amely, USA
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="testimonials__feedback">
-            <div class="testimonials__descr">
-              <h3 class="testimonials__date">
-                20 Decepmer 2020
-              </h3>
-              <div class="testimonials__text">
-                Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
+              <div class="testimonials__feedback">
+                <div class="testimonials__descr">
+                  <h3 class="testimonials__date">
+                    20 Decepmer 2020
+                  </h3>
+                  <div class="testimonials__text">
+                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
+                  </div>
+                </div>
+                <div class="testimonials__person">
+                  <div class="testimonials__person-photo">
+                    <img src="assets/img/testimonials/feedback-03.png" alt="">
+                  </div>
+                  <div class="testimonials__person-name">
+                    Amely, USA
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="testimonials__person">
-              <div class="testimonials__person-photo">
-                <img src="assets/img/testimonials/feedback-02.png" alt="">
+              <div class="testimonials__feedback">
+                <div class="testimonials__descr">
+                  <h3 class="testimonials__date">
+                    20 Decepmer 2020
+                  </h3>
+                  <div class="testimonials__text">
+                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
+                  </div>
+                </div>
+                <div class="testimonials__person">
+                  <div class="testimonials__person-photo">
+                    <img src="assets/img/testimonials/feedback-03.png" alt="">
+                  </div>
+                  <div class="testimonials__person-name">
+                    Amely, USA
+                  </div>
+                </div>
               </div>
-              <div class="testimonials__person-name">
-                Chris, Australia
-              </div>
-            </div>
-          </div>
-          <div class="testimonials__feedback">
-            <div class="testimonials__descr">
-              <h3 class="testimonials__date">
-                20 Decepmer 2020
-              </h3>
-              <div class="testimonials__text">
-                Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
-              </div>
-            </div>
-            <div class="testimonials__person">
-              <div class="testimonials__person-photo">
-                <img src="assets/img/testimonials/feedback-03.png" alt="">
-              </div>
-              <div class="testimonials__person-name">
-                Amely, USA
+              <div class="testimonials__feedback">
+                <div class="testimonials__descr">
+                  <h3 class="testimonials__date">
+                    20 Decepmer 2020
+                  </h3>
+                  <div class="testimonials__text">
+                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great. 
+                  </div>
+                </div>
+                <div class="testimonials__person">
+                  <div class="testimonials__person-photo">
+                    <img src="assets/img/testimonials/feedback-03.png" alt="">
+                  </div>
+                  <div class="testimonials__person-name">
+                    Amely, USA
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -494,10 +710,10 @@
             </li>
           </ul>
           <div class="look__slider-btn">
-            <div class="look__slider-next">
+            <div id="nextLook" class="look__slider-next">
               <img src="assets/icons/pets/arrow.svg" alt="">
             </div>
-            <div class="look__slider-prev">
+            <div id="prevLook" class="look__slider-prev">
               <img src="assets/icons/pets/arrow.svg" alt="">
             </div>
           </div>
@@ -553,5 +769,77 @@
         </div>
       </div>
     </footer>
+    <div id="popUpCover" class="popup not-visible">
+    </div>
+    <div id="accountPopUp" class="popup-container not-visible">
+      <div class="popup-header">
+        <img src="../../assets/icons/header/logo.svg" alt="">
+      </div>
+      <div class="popup-body">
+        <div class="popup-choose__btn">
+          <button id="popUpCreateBtn" class="active">
+            create account
+          </button>
+          <button  id="popUpLoginBtn">
+            log in
+          </button>
+        </div>
+        <div class="popup-social__btn">
+          <button>
+            <img src="../../assets/icons/popup/google.svg" alt="google svg icon">
+            Google Sign in
+          </button>
+          <button>
+            <img src="../../assets/icons/popup/facebook.svg" alt="">
+            Facebook Sign in
+          </button>
+        </div>
+      </div>
+      <form id="createAccount" class="popup-form create">
+        <label class="popup-form__label" for="name">name</label>
+        <input class="popup-form__input" id="name" type="text">
+        <label class="popup-form__label" for="email">email</label>
+        <input class="popup-form__input" type="email">
+        <label class="popup-form__label" for="password">password</label>
+        <input class="popup-form__input" id="password" type="text"> 
+        <label class="checkbox-label"><input class="popup-form__checkbox" id="agreement" type="checkbox" name="agreement" value="true">Agree with the &nbsp;<a href="">User Agreement</a>&nbsp; and &nbsp;<a href=""> Privacy Policy </a> </label>
+        <button class="popup-form__btn"> 
+          send
+        </button>
+      </form>
+      <form id="logAccount" class="popup-form log-in">
+        <label class="popup-form__label" for="email">email</label>
+        <input class="popup-form__input" type="email">
+        <label class="popup-form__label" for="password">password</label>
+        <input class="popup-form__input" id="password" type="text"> 
+        <button class="popup-form__btn"> 
+          send
+        </button>
+      </form>
+    </div>
+    <div id="feedbackPopUp" class="popup-container not-visible">
+      <h3 class="subheader not-visible">
+        contact us
+      </h3>
+      <h3 class="subheader">
+        contact us
+      </h3>
+      <form class="popup-form">
+        <label class="popup-form__label" for="name">name</label>
+        <input class="popup-form__input" id="name" type="text">
+        <label class="popup-form__label" for="email">email</label>
+        <input class="popup-form__input" type="email"> 
+        <label class="popup-form__label" for="feedback">Your Message</label>
+        <input id="feedback" class="popup-form__input message" type="text"> 
+        <button class="popup-form__btn"> 
+          send
+        </button>
+      </form>
+      </form>
+    </div>
+    <script src="pages/js/script.js">
+    </script>
+    <script src="pages/js/slider.js">
+    </script>
   </body>
 </html>

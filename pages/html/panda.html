@@ -15,66 +15,67 @@
     <link rel="stylesheet" href="../css/block/media-animals.css">
     <link rel="stylesheet" href="../css/block/media-footer-map.css">
     <link rel="stylesheet" href="../css/block/media-header.css">
+    <link rel="stylesheet" href="../css/block/popup.css">
     <meta name="viewport" content="max-width=device-max-width, initial-scale=1">
     <title>document</title>
 </head>
 <body>
-  <header class="menu">
-    <div class="container">
-      <nav class="menu__nav">
-        <ul class="menu__list">
-          <li class="menu__logo">
-            <a href="../../index.html">
-              <img src="../../assets/icons/header/logo.svg" alt="">
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a href="../../index.html" class="menu__list-link" href="">
-              about
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a href="map.html" class="menu__list-link" href="">
-              map
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a href="#" class="menu__list-link" href="">
-              zoos
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="">
-              contact us
-            </a>
-          </li>
-          <li class="menu__list-item">
-            <a href ="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="menu__list-link" href="">
-              design
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="menu__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu__account">
-        <button class="button menu__search">
-          <img src="assets/icons/header/search.svg" alt="">
-        </button>
-        <div class="menu__account-manage">
-          <button class="menu__log-in button">
-            log in
+    <header class="menu">
+      <div class="container">
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__logo">
+              <a href="../../index.html">
+                <img src="../../assets/icons/header/logo.svg" alt="">
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="../../index.html">
+                about
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="map.html">
+                map
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="panda.html">
+                zoos
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a id="contactUs" class="menu__list-link" href="">
+                contact us
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="">
+                design
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu__account">
+          <button class="button menu__search">
+            <img src="assets/icons/header/search.svg" alt="">
           </button>
-          <button class="menu__sign-up button">
-            sign up
-          </button>
+          <div class="menu__account-manage">
+            <button class="menu__log-in button">
+              log in
+            </button>
+            <button class="menu__sign-up button">
+              sign up
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header> 
     <div class="wrapper">
       <div class="container">
         <section class="animal">
@@ -137,24 +138,49 @@
               <h3 class="animal__watch-sub">
                 Main cameras
               </h3>
-              <iframe class="animal__youtube" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe id="mainIframe" class="animal__youtube" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h3 class="animal__slider-sub animal__watch-sub">Side Cameras</h3>
-            <div class="animal__cam-slider">
-              <div class="animal__cam-card">
-                <img src="../../assets/img/animals/youtube.png" alt="">
-              </div>
-              <div class="animal__cam-card">
-                <img src="../../assets/img/animals/youtube.png" alt="">
-              </div>
-              <div class="animal__cam-card">
-                <img src="../../assets/img/animals/youtube.png" alt="">
+            <div id="animalsWrapper">
+              <div id="animalsCarousel">
+                <div class="animal__cam-slider" id="animalsContent">
+                  <div class="animal__cam-card">
+                    <iframe class="animal__cam-iframe" src="https://www.youtube.com/embed/D7xWXk5T3-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed/D7xWXk5T3-g" class="cam-cover">
+    
+                    </a>
+                  </div>
+                  <div class="animal__cam-card">
+                    <iframe class="animal__cam-iframe" src="https://www.youtube.com/embed/I-ovzUNno7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed/I-ovzUNno7g" class="cam-cover">
+    
+                    </a>
+                  </div>
+                  <div class="animal__cam-card">
+                    <iframe class="animal__cam-iframe" src="https://www.youtube.com/embed/I-ovzUNno7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed/I-ovzUNno7g" class="cam-cover">
+    
+                    </a>
+                  </div>
+                  <div class="animal__cam-card">
+                    <iframe class="animal__cam-iframe" src="https://www.youtube.com/embed/I-ovzUNno7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed/I-ovzUNno7g" class="cam-cover">
+    
+                    </a>
+                  </div>
+                  <div class="animal__cam-card">
+                    <iframe class="animal__cam-iframe" src="https://www.youtube.com/embed/I-ovzUNno7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/embed/I-ovzUNno7g" class="cam-cover">
+    
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="animal__cam-btn">
-                <div class="animal__cam-next">
+                <div class="animal__cam-next" id="animalCamNext">
                   <img src="../../assets/icons/pets/arrow.svg" alt="">
                 </div>
-                <div class="animal__cam-prev">
+                <div class="animal__cam-prev" id="animalCamPrev">
                   <img src="../../assets/icons/pets/arrow.svg" alt="">
                 </div>
               </div>
@@ -293,6 +319,79 @@
           </p>
         </div>
       </div>
-    </footer>    
+    </footer>   
+    <div id="popUpCover" class="popup not-visible">
+    </div>
+    <div id="accountPopUp" class="popup-container not-visible">
+      <div class="popup-header">
+        <img src="../../assets/icons/header/logo.svg" alt="">
+      </div>
+      <div class="popup-body">
+        <div class="popup-choose__btn">
+          <button id="popUpCreateBtn" class="active">
+            create account
+          </button>
+          <button  id="popUpLoginBtn">
+            log in
+          </button>
+        </div>
+        <div class="popup-social__btn">
+          <button>
+            <img src="../../assets/icons/popup/google.svg" alt="google svg icon">
+            Google Sign in
+          </button>
+          <button>
+            <img src="../../assets/icons/popup/facebook.svg" alt="">
+            Facebook Sign in
+          </button>
+        </div>
+      </div>
+      <form id="createAccount" class="popup-form create">
+        <label class="popup-form__label" for="name">name</label>
+        <input class="popup-form__input" id="name" type="text">
+        <label class="popup-form__label" for="email">email</label>
+        <input class="popup-form__input" type="email">
+        <label class="popup-form__label" for="password">password</label>
+        <input class="popup-form__input" id="password" type="text"> 
+        <label class="checkbox-label"><input class="popup-form__checkbox" id="agreement" type="checkbox" name="agreement" value="true">Agree with the &nbsp;<a href="">User Agreement</a>&nbsp; and &nbsp;<a href=""> Privacy Policy </a> </label>
+        <button class="popup-form__btn"> 
+          send
+        </button>
+      </form>
+      <form id="logAccount" class="popup-form log-in">
+        <label class="popup-form__label" for="email">email</label>
+        <input class="popup-form__input" type="email">
+        <label class="popup-form__label" for="password">password</label>
+        <input class="popup-form__input" id="password" type="text"> 
+        <button class="popup-form__btn"> 
+          send
+        </button>
+      </form>
+    </div>
+    <div id="feedbackPopUp" class="popup-container not-visible">
+      <h3 class="subheader not-visible">
+        contact us
+      </h3>
+      <h3 class="subheader">
+        contact us
+      </h3>
+      <form class="popup-form">
+        <label class="popup-form__label" for="name">name</label>
+        <input class="popup-form__input" id="name" type="text">
+        <label class="popup-form__label" for="email">email</label>
+        <input class="popup-form__input" type="email"> 
+        <label class="popup-form__label" for="feedback">Your Message</label>
+        <input id="feedback" class="popup-form__input message" type="text"> 
+        <button class="popup-form__btn"> 
+          send
+        </button>
+      </form>
+      </form>
+    </div>  
+    <script src="../js/script.js">
+    </script>
+    <script src="../js/animals.js">
+    </script>
+    
 </body>
 </html>
