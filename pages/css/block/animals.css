@@ -11,10 +11,11 @@
   position: relative;
   width: 100%;
   background: url(../../../assets/img/animals/animal-donate.png) no-repeat;
-  background-position: 0 110%;
+  background-position: 0% 105%;
   background-size: contain; }
 
 .container__header {
+  width: 1330px;
   margin-top: 55px; }
 
 .container .subheader {
@@ -133,13 +134,12 @@
     margin-top: 53px; }
   .animal__cam {
     max-width: 100%;
-    width: 100%; }
+    width: 1330px; }
     .animal__cam-slider {
       position: relative;
       display: flex;
-      justify-content: center;
-      width: 91%;
-      column-gap: 2.7vw; }
+      justify-content: flex-start;
+      column-gap: 20px; }
     .animal__cam-prev > img {
       transition: 0.3s;
       transform: scale(-1);
@@ -148,6 +148,22 @@
         transform: scale(-1.2); }
       .animal__cam-prev > img:active {
         transform: scale(-0.8); }
+    .animal__cam #animalsCarousel {
+      position: relative;
+      width: 1200px;
+      overflow: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none; }
+    .animal__cam #animalsContent {
+      display: flex;
+      column-gap: 20px;
+      width: 2000px;
+      height: 250px; }
+    .animal__cam #animalsWrapper {
+      width: 1480px;
+      position: relative; }
+    .animal__cam #animalsCarousel::-webkit-scrollbar {
+      height: 0; }
     .animal__cam-next > img {
       transition: 0.3s;
       cursor: pointer; }
@@ -156,16 +172,23 @@
       .animal__cam-next > img:active {
         transform: scale(0.8); }
     .animal__cam-card {
-      max-width: 380px;
-      width: 100%;
+      position: relative;
+      width: 380px;
       height: 220px; }
-      .animal__cam-card > img {
-        max-width: 100%;
-        width: 100%; }
+      .animal__cam-card > iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px; }
+      .animal__cam-card > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
     .animal__cam-btn {
       position: absolute;
-      top: 27%;
-      right: -7%; }
+      top: 22%;
+      right: 12%; }
   .animal__youtube {
     max-width: 1324px;
     width: 100%;

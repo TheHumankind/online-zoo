@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/block/media-map.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/block/header.css">
+    <link rel="stylesheet" href="../css/block/popup.css">
     <link rel="stylesheet" href="../css/block/footer.css">
     <link rel="stylesheet" href="../css/block/map.css">
     <link rel="stylesheet" href="../css/block/animation.css">
@@ -30,27 +31,27 @@
             </a>
           </li>
           <li class="menu__list-item">
-            <a href="../../index.html" class="menu__list-link" href="">
+            <a class="menu__list-link" href="../../index.html">
               about
             </a>
           </li>
           <li class="menu__list-item">
-            <a href="map.html" class="menu__list-link" href="">
+            <a class="menu__list-link" href="#">
               map
             </a>
           </li>
           <li class="menu__list-item">
-            <a href="panda.html" class="menu__list-link" href="">
+            <a class="menu__list-link" href="panda.html">
               zoos
             </a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="">
+            <a id="contactUs" class="menu__list-link" href="">
               contact us
             </a>
           </li>
           <li class="menu__list-item">
-            <a href ="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="menu__list-link" href="">
+            <a class="menu__list-link" href="">
               design
             </a>
           </li>
@@ -63,7 +64,7 @@
       </div>
       <div class="menu__account">
         <button class="button menu__search">
-          <img src="assets/icons/header/search.svg" alt="">
+          <img src="../../assets/icons/header/search.svg" alt="">
         </button>
         <div class="menu__account-manage">
           <button class="menu__log-in button">
@@ -75,112 +76,187 @@
         </div>
       </div>
     </div>
-  </header>
-    <section class="map">
-      <div class="container">
-        <h2 class="subheader">
-          Choose your favorite Animal
-        </h2>
-        <div class="map__pets map__eagle">
-          <div class="map__pets-tooltip">
-            <div>Eagles</div> 
-            <div>Catalina Island</div> 
-          </div>
-          <div class="map__pets-wrapper">
-            <a href="eagle.html" class="map__pets-icon ">
-              <img src="../../assets/img/pets/eagle.jpg" alt="eagle image">
-            </a>
-          </div>
+  </header> 
+  <section class="map">
+    <div class="container__header">
+      <h2 class="subheader">
+        Choose your favorite Animal
+      </h2>
+    </div>
+    <div id="container" class="container">
+      
+      <div class="map__pets map__eagle">
+        <div class="map__pets-tooltip">
+          <div>Eagles</div> 
+          <div>Catalina Island</div> 
         </div>
-        <div class="map__pets map__crocodile">
-          <div class="map__pets-tooltip">
-            <div>Aligators</div> 
-            <div>St. Augustine's Zoological Park</div> 
-          </div>
-          <div class="map__pets-wrapper">
-            <a href="aligator.html" class="map__pets-icon ">
-              <img src="../../assets/img/pets/crocodile.jpg" alt="crocodile image">
-            </a>
-          </div>
-        </div>
-        <div class="map__pets map__gorila">
-          <div class="map__pets-tooltip">
-            <div>Gorila</div> 
-            <div>GRACE gorillas</div> 
-          </div>
-          <div class="map__pets-wrapper">
-            <a href="gorila.html" class="map__pets-icon ">
-              <img src="../../assets/img/pets/gorilas.jpg" alt="gorillas image">
-            </a>
-          </div>
-        </div>
-        <div class="map__pets map__panda">
-          <div class="map__pets-tooltip">
-            <div>Pandas</div> 
-            <div>Shenshuping Gengda Panda Center</div> 
-          </div>
-          <div class="map__pets-wrapper">
-            <a href="panda.html" class="map__pets-icon ">
-              <img src="../../assets/img/pets/panda.jpg" alt="panda image">
-            </a>
-          </div>
-        </div>
-        <img src="../../assets/img/map/map.png" alt="map image">
-        <div class="map__btn">
-          <div class="map__btn-plus">
-
-          </div>
-          <div class="map__btn-minus">
-
-          </div>
+        <div class="map__pets-wrapper">
+          <a class="map__pets-icon ">
+            <img src="../../assets/img/pets/eagle.jpg" alt="">
+          </a>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <nav class="footer__nav">
-          <ul class="footer__list">
-            <li class="footer__logo">
-              <a href="../../index.html">
-                <img src="../../assets/icons/header/logo.svg" alt="">
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a href="../../index.html" class="footer__list-link" href="../../index.html">
-                about
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a href="map.html" class="footer__list-link" href="">
-                map
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a href="panda.html" class="footer__list-link" href="">
-                zoos
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a class="footer__list-link" href="">
-                contact us
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="footer__list-link" href="">
-                design
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__descr">
-          <p>
-            Design by Lemeshko Kateryna
-          </p>
-          <p>
-            ©RSSchool and ©Yem Digital 2021
-          </p>
+      <div class="map__pets map__crocodile">
+        <div class="map__pets-tooltip">
+          <div>Aligators</div> 
+          <div>St. Augustine's Zoological Park</div> 
+        </div>
+        <div class="map__pets-wrapper">
+          <a class="map__pets-icon ">
+            <img src="../../assets/img/pets/crocodile.jpg" alt="">
+          </a>
         </div>
       </div>
-    </footer>
+      <div class="map__pets map__gorila">
+        <div class="map__pets-tooltip">
+          <div>Gorila</div> 
+          <div>GRACE gorillas</div> 
+        </div>
+        <div class="map__pets-wrapper">
+          <a class="map__pets-icon ">
+            <img src="../../assets/img/pets/gorilas.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="map__pets map__panda">
+        <div class="map__pets-tooltip">
+          <div>Pandas</div> 
+          <div>Shenshuping Gengda Panda Center</div> 
+        </div>
+        <div class="map__pets-wrapper">
+          <a class="map__pets-icon ">
+            <img src="../../assets/img/pets/panda.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <img id="map" src="../../assets/img/map/map.png" alt="">
+      <div class="map__btn">
+        <div id="zoomIn" class="map__btn-plus">
+
+        </div>
+        <div id="zoomOut" class="map__btn-minus">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__logo">
+            <a href="../../index.html">
+              <img src="../../assets/icons/header/logo.svg" alt="">
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="../../index.html" class="footer__list-link" href="../../index.html">
+              about
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="map.html" class="footer__list-link" href="">
+              map
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="panda.html" class="footer__list-link" href="">
+              zoos
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="">
+              contact us
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo" class="footer__list-link" href="">
+              design
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__descr">
+        <p>
+          Design by Lemeshko Kateryna
+        </p>
+        <p>
+          ©RSSchool and ©Yem Digital 2021
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div id="popUpCover" class="popup not-visible">
+  </div>
+  <div id="accountPopUp" class="popup-container not-visible">
+    <div class="popup-header">
+      <img src="../../assets/icons/header/logo.svg" alt="">
+    </div>
+    <div class="popup-body">
+      <div class="popup-choose__btn">
+        <button id="popUpCreateBtn" class="active">
+          create account
+        </button>
+        <button  id="popUpLoginBtn">
+          log in
+        </button>
+      </div>
+      <div class="popup-social__btn">
+        <button>
+          <img src="../../assets/icons/popup/google.svg" alt="google svg icon">
+          Google Sign in
+        </button>
+        <button>
+          <img src="../../assets/icons/popup/facebook.svg" alt="">
+          Facebook Sign in
+        </button>
+      </div>
+    </div>
+    <form id="createAccount" class="popup-form create">
+      <label class="popup-form__label" for="name">name</label>
+      <input class="popup-form__input" id="name" type="text">
+      <label class="popup-form__label" for="email">email</label>
+      <input class="popup-form__input" type="email">
+      <label class="popup-form__label" for="password">password</label>
+      <input class="popup-form__input" id="password" type="text"> 
+      <label class="checkbox-label"><input class="popup-form__checkbox" id="agreement" type="checkbox" name="agreement" value="true">Agree with the &nbsp;<a href="">User Agreement</a>&nbsp; and &nbsp;<a href=""> Privacy Policy </a> </label>
+      <button class="popup-form__btn"> 
+        send
+      </button>
+    </form>
+    <form id="logAccount" class="popup-form log-in">
+      <label class="popup-form__label" for="email">email</label>
+      <input class="popup-form__input" type="email">
+      <label class="popup-form__label" for="password">password</label>
+      <input class="popup-form__input" id="password" type="text"> 
+      <button class="popup-form__btn"> 
+        send
+      </button>
+    </form>
+  </div>
+  <div id="feedbackPopUp" class="popup-container not-visible">
+    <h3 class="subheader not-visible">
+      contact us
+    </h3>
+    <h3 class="subheader">
+      contact us
+    </h3>
+    <form class="popup-form">
+      <label class="popup-form__label" for="name">name</label>
+      <input class="popup-form__input" id="name" type="text">
+      <label class="popup-form__label" for="email">email</label>
+      <input class="popup-form__input" type="email"> 
+      <label class="popup-form__label" for="feedback">Your Message</label>
+      <input id="feedback" class="popup-form__input message" type="text"> 
+      <button class="popup-form__btn"> 
+        send
+      </button>
+    </form>
+    </form>
+  </div>
+  <script src="../js/script.js">
+  </script>
+  <script src="../js/map.js">
+  </script>
 </body>
 </html>

@@ -6,9 +6,13 @@
 
 .map {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
   width: 100%;
-  height: 1040px;
+  height: 1000px;
   padding-top: 26px;
   background-color: #2a8086;
   z-index: -1;
@@ -16,14 +20,17 @@
   .map .container {
     width: 75%;
     position: relative;
-    height: 100%;
+    height: 900px;
     background-color: #2a8086; }
     .map .container > img {
       width: 100%;
       position: absolute;
-      top: 54%;
-      left: 0;
-      transform: translateY(-50%); }
+      top: 0px;
+      left: 0px; }
+  .map .container__header {
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 30px; }
   .map__pets {
     position: absolute;
     max-width: 92px;
@@ -185,3 +192,5 @@
         border-radius: 2px;
         background: #ffffff; }
 
+.footer {
+  margin-top: 0; }
