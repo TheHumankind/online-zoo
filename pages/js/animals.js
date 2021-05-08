@@ -1,12 +1,13 @@
 const animalsIframes = document.querySelectorAll('.cam-cover');
 const mainIframe = document.getElementById('mainIframe');
-
+let bufSrc = '';
 animalsIframes.forEach(element => {
     element.addEventListener('click',(e) => {
         e.preventDefault();
-        console.log(mainIframe);
-        console.log(e.target);
+        bufSrc = mainIframe.src;
         mainIframe.src = e.target.href;
+        e.target.href = bufSrc;
+        e.target.closest('.animal__cam-card').querySelector('iframe').src = bufSrc;
     });
 });
 
